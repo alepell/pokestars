@@ -1,14 +1,13 @@
 <?php
   /*template name: pokestar
   */
-
-
  $args = array(
     'post_type'=>'competidores'
  );
  $query = new WP_query($args);
-
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -50,7 +49,7 @@
                 <p><?= the_title();?></p>
                 <img
                 src="<?= $avatar_url['sizes']['medium_large']; ?>"
-                alt="ale"
+                alt="<?= the_title();?>"
                 />
                 <ul>
                 <?php while ($i <= $number_of_pokes) : ?>
