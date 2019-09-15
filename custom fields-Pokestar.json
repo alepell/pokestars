@@ -62,6 +62,65 @@
         "description": ""
     },
     {
+        "key": "group_5d7e5d1c2dda9",
+        "title": "Champion selection",
+        "fields": [
+            {
+                "key": "field_5d7e5d4574eaf",
+                "label": "Select the current Champ",
+                "name": "champion_details",
+                "type": "post_object",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "competidores"
+                ],
+                "taxonomy": "",
+                "allow_null": 0,
+                "multiple": 0,
+                "return_format": "object",
+                "ui": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-pokestar.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "page_attributes",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": ""
+    },
+    {
         "key": "group_5d7d953714e0e",
         "title": "Pokes selection",
         "fields": [
