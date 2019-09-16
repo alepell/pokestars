@@ -6,6 +6,8 @@
  );
  $query = new WP_query($args);
  $champion= get_field('champion_details');
+ $background_image_URL= get_field('background_image');
+
 ?>
 
 
@@ -20,7 +22,16 @@
     <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?> /assets/icons.ico" />
     <title>PokeStars - Tournament</title>
   </head>
-  <body>
+  <body
+      <?php if ($background_image_URL): ?>
+        style="
+        background-image: url(<?= $background_image_URL['sizes']['large']; ?> );
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        "
+      <?php endif; ?>
+   >
     <header>
       <div>
         <p>PokeStars</p>
@@ -48,42 +59,40 @@
       wp_reset_postdata();
     endif; ?>
 
+
+
+
+<section id="cards">
     <?php 
     $id_numb=1;
     $i=1;
     $number_of_pokes=12;
-    while ($query->have_posts()): $query->the_post(); $avatar_url = get_field('avatar');
-    ?>
+    while ($query->have_posts()): $query->the_post(); $avatar_url = get_field('avatar'); ?>
 
-      <section id="cards">
-          <div class="card" id="<?= $id_numb; ?>">
-              <p><?= the_title();?></p>
-              <img
-              src="<?= $avatar_url['sizes']['medium_large']; ?>"
-              alt="<?= the_title();?>"
-              />
-              <ul>
-                <?php 
-                while ($i <= $number_of_pokes) : ?>
-                      <li>
-                          <img
-                          src="https://play.pokemonshowdown.com/sprites/ani/<?= the_field("poke{$i}"); ?>.gif"
-                          alt=""
-                          class="sprite"
-                          />
-                          <span><?= the_field("poke{$i}"); ?></span>
-                      </li>
-                <?php
-                $i++; endwhile; $i=1; ?>        
-              </ul>
-          </div>
-      </section>
-
-
-    <?php  
-        $id_numb++; endwhile;  wp_reset_postdata();
-    ?>  
-        
+      <div class="card" id="<?= $id_numb; ?>">
+          <p><?= the_title();?></p>
+          <img
+          src="<?= $avatar_url['sizes']['medium_large']; ?>"
+          alt="<?= the_title();?>"
+          />
+          <ul>
+            <?php 
+            while ($i <= $number_of_pokes) : ?>
+                  <li>
+                      <img
+                      src="https://play.pokemonshowdown.com/sprites/ani/<?= the_field("poke{$i}"); ?>.gif"
+                      alt=""
+                      class="sprite"
+                      />
+                      <span><?= the_field("poke{$i}"); ?></span>
+                  </li>
+            <?php
+            $i++; endwhile; $i=1; ?>        
+          </ul>
+      </div>
+ 
+    <?php  $id_numb++; endwhile;  wp_reset_postdata(); ?>  
+</section>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
