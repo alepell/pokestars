@@ -380,7 +380,7 @@
             {
                 "key": "field_5d7d97f185c84",
                 "label": "poke11",
-                "name": "poke12",
+                "name": "poke11",
                 "type": "text",
                 "instructions": "Digite o nome *CORRETO* do seu poke no campo a abaixo",
                 "required": 0,
