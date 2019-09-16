@@ -21,29 +21,29 @@ $("#5 img")
   });
 
 $("#6 img").click(() => {
-  $("#5 ul").slideToggle(300);
+  $("#6 ul").slideToggle(300);
 });
 
 $("#7 img").click(() => {
-  $("#5 ul").slideToggle(300);
+  $("#7 ul").slideToggle(300);
 });
 
 $("#8 img").click(() => {
-  $("#5 ul").slideToggle(300);
+  $("#8 ul").slideToggle(300);
 });
 
 $("#9 img").click(() => {
-  $("#5 ul").slideToggle(300);
+  $("#9 ul").slideToggle(300);
 });
 
 $("#10 img").click(() => {
-  $("#5 ul").slideToggle(300);
+  $("#10 ul").slideToggle(300);
 });
 
 $("#11 img").click(() => {
-  $("#5 ul").slideToggle(300);
+  $("#11 ul").slideToggle(300);
 });
 
 $("#12 img").click(() => {
-  $("#5 ul").slideToggle(300);
+  $("#12 ul").slideToggle(300);
 });
