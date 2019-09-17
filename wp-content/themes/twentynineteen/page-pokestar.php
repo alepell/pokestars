@@ -2,7 +2,9 @@
   /*template name: pokestar
   */
  $args = array(
-    'post_type'=>'competidores'
+    'post_type'=>'competidores',
+    'posts_per_page' => -1
+    
  );
  $query = new WP_query($args);
  $champion= get_field('champion_details');
@@ -25,7 +27,7 @@
   <body
       <?php if ($background_image_URL): ?>
         style="
-        background-image: url(<?= $background_image_URL['sizes']['large']; ?> );
+        background-image: url(<?= wp_get_attachment_image($background_image_URL,'full'); ?> );
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
