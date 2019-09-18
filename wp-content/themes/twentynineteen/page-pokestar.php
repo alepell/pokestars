@@ -49,11 +49,14 @@
       ?>
       <section>
         <div class="campeao">
-          <p>Campeāo</p>
+          <p>Campeāo Atual</p>
           <h4><?= the_title(); ?></h4>
           <img
-            src="<?= $avatar_url['sizes']['medium_large']; ?>"
+            src="<?= $avatar_url['sizes']['medium']; ?>"
             alt="<?= the_title(); ?>"
+		      	style="border-radius: 100%;
+            border: solid 8px white;
+            box-shadow: -1px 5px 17px 11px dimgrey;"
           />
         </div>
       </section>
