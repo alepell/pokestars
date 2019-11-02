@@ -58,8 +58,7 @@ header div p {
   font-size: 2rem;
   margin-bottom: 10px;
 }
-
-#champpic {
+.campeao img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -68,10 +67,10 @@ header div p {
   transition: 0.2s;
 }
 
-section#cards {
-  display: flex !important;
-  justify-content: space-around !important;
-  flex-wrap: wrap !important;
+#cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -114,29 +113,27 @@ ul {
 }
 
 ul li {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 15px;
   margin: 10px;
-  height: 70px;
+  height: 60px;
 }
 
 ul li img {
-  height: 60px !important;
-  width: 60px !important;
+  height: 70px !important;
+  width: 70px !important;
   border: none !important;
-  margin-right: 20px !important;
-  border-radius: 0px !important;
 }
 
 @media (max-width: 768px) {
   #cards {
-    margin-top: 50px !important;
+    margin-top: 50px;
   }
 
   #cards div {
-    width: 100% !important;
+    width: 100%;
   }
 }
