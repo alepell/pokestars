@@ -1,0 +1,36 @@
+Picking
+ - Não será permitido pokémons repetidos (com exceção de alola forms)
+   ou seja se o pokémon Charizard já foi pego por um competidor, nenhum outro poderá pegar 
+   o mesmo pokémon.
+ 
+Mega Pokémon
+ - Mega Pokémons são banidos
+
+Campeonato
+ - O campeonato será divido em duas fases, sendo a primeira em pontos corridos, e a segunda mata-mata
+   onde 4 duplas avançam para o ultimo round.
+
+Battle
+ - Os jogos são em melhor de 3 ou seja a primeira dupla que vencer duas batalhas vence!
+ - Jogadores não podem se comunicar durante a batalha (punicao ??)
+ - Cada jogador deve controlar SOMENTE o seus pokémons, se caso um jogador controlar o pokemon 
+   da sua dupla, a dupla receberá um saldo de -1  por cada movimento realizado 
+   (pensar melhor na punição aqui de cima)
+
+
+Pontuação
+ -  A pontuação no chalonge será o saldo total das batalhas, ou seja :
+    se na primeira batalha a dupla "A" ganhou de 4 X  0 
+    e na segunda batalha a dupla "A" ganhou de 2 X 0 
+    o resultado no challonge será de 6 X 0 
+
+    Porém se na primeira batalha o resultado for | A-> 1 X 0 <-B |
+    Na segunda batalha ...                       | A-> 0 X 4 <-B |
+    e a na terceira terceira ...                 | A-> 3 X 0 <-B |
+    - - - - -- - - - - - - - -  - - - - - - - - - - - - - - - - - - 
+    o RESULTADO no CHALLONGE será                | A-> 4 X 4 <-B | 
+
+    porém a vitória DEVERÁ ser registrada para o time "A"     
+
+ -  os REPLAYS SÃO OBRIGATORIOS para a validação da pontuação ! ! ! !
+
